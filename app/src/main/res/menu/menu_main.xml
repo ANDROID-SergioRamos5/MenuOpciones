@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/opcMenu1"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Opcion Uno"
+        app:showAsAction="ifRoom|withText" />
+    <group android:id="@+id/grupo1">
+        <item android:id="@+id/opcMenu2"
+            android:title="Opcion dos"
+            app:showAsAction="never"/>
+        <item android:id="@+id/opcMenu3"
+            android:title="Opcion tres"
+            app:showAsAction="never"/>
+    </group>
+    <item android:id="@+id/opcMenu4"
+        android:title="Opcion Cuatro"
+        app:showAsAction="never">
+        <menu>
+            <group android:id="@+id/grupo2">
+                <item android:id="@+id/opcSubMenu1"
+                    android:title="Submenu uno"
+                    app:showAsAction="never"/>
+                <item android:id="@+id/opcSubMenu2"
+                    android:title="submenu dos"
+                    app:showAsAction="never"/>
+            </group>
+        </menu>
+    </item>
+</menu>
